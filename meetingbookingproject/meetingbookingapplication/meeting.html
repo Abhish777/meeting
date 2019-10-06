@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>MEETING HALL BOOKING</title>
+    <link rel="stylesheet" href="../templates/meeting.css">
+
+</head>
+<body>
+<form method="POST">
+    {% csrf_token %}
+
+    <table>
+        <h2>ENTER YOUR DETAILS</h2>
+        <tr>
+            <th><label>Enter your meeting room id :</label></th>
+            <td><input type="text" name="mid" autocomplete="off"/> </td><br><br>
+
+        </tr>
+        <tr>
+            <th><label>Enter your meeting room name :</label></th>
+            <td><input type="text" name="mroom" autocomplete="off"/> </td><br><br>
+
+        </tr>
+        <tr>
+            <th><label>Enter description :</label></th>
+            <td><input type="text" name="mdescription" autocomplete="off"/></td><br><br>
+
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="submit">
+                <input type="reset" value="clear">
+
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
